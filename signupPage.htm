@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cssFile.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="reSize()">
+    <div class="Page container-fluid pl-0 pr-0" id="container">
+        <div class="fullpage d-flex align-items-center justify-content-center h-100 backColor">
+            <div class="mainBox mainBoxWidth shadow">
+                <div class="row mainBoxHeight">
+                    <div class="col-8 rightPanel bg-dark d-flex align-items-center paddingLeft100">
+                        <div class="toolsPart">
+                            <div class="title">
+                                <span class="text-light fontSize25">And Here Is a Space To Introduce You</span><br>
+                                <span class="text-light">Become a Member And Create Your Resume</span>
+                            </div>
+                            <div class="linkInput pt-5">
+                                <a href="./homePage.htm"><button type="button"
+                                        class="btn buttonStyle1 mr-2 shadow">Home</button></a>
+                                <a href="./loginPageLink.htm"><button type="button" class="btn buttonStyle1 shadow">Log
+                                        In</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 leftPanel text-center bg-light d-flex align-items-center justify-content-center">
+                        <div class="formContent">
+                            <form>
+
+                                <div class="row phoneNumber_emailPart" id="phoneNumber_emailPart">
+                                    <div class="col-10 basePart">
+                                        <div class="step pb-5">
+                                            <span id="step1">Step 1</span>
+                                        </div>
+                                        <div class="title pb-3">
+                                            <span class="text-muted fontSize12">Enter a Phone Number or Email
+                                                Address</span>
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="inputboxStyle" id="inputPhoneNumber_email"
+                                                onkeypress="displayStep1()">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 secondaryPart">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle"
+                                            id="symbolArrowPhoneNumber_email">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle d-none"
+                                            id="arrowPhoneNumber_email" onclick="nextStep2()">
+                                    </div>
+                                </div>
+
+                                <div class="row passwordPart paddingTop118 d-none" id="passwordPart">
+                                    <div class="col-10 basePart">
+                                        <div class="step pb-5">
+                                            <span id="step2">Step 2</span>
+                                        </div>
+                                        <div class="title pb-3">
+                                            <span class="text-muted fontSize12">Choose a Password</span>
+                                        </div>
+                                        <div class="input">
+                                            <input type="password" class="inputboxStyle" id="inputPassword"
+                                                onkeypress="displayStep2()">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 secondaryPart">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle"
+                                            id="symbolArrowPassword">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle d-none"
+                                            id="arrowPassword" onclick="nextStep3()">
+                                    </div>
+                                </div>
+
+                                <div class="row confirmPasswordPart paddingTop118 d-none" id="confirmPasswordPart">
+                                    <div class="col-10 basePart">
+                                        <div class="step pb-5">
+                                            <span id="step3">Step 3</span>
+                                        </div>
+                                        <div class="title pb-3">
+                                            <span class="text-muted fontSize12">Confirm your password</span>
+                                        </div>
+                                        <div class="input">
+                                            <input type="password" class="inputboxStyle" id="inputConfirmPassword"
+                                                onkeypress="displayStep3()">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 secondaryPart">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle"
+                                            id="symbolArrowConfirmPassword">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle d-none"
+                                            id="arrowConfirmPassword" onclick="nextStep4()">
+                                    </div>
+                                </div>
+
+                                <div class="row fullNamePart paddingTop118 d-none" id="fullNamePart">
+                                    <div class="col-10 basePart">
+                                        <div class="step pb-5">
+                                            <span id="step4">Step 4</span>
+                                        </div>
+                                        <div class="title pb-3">
+                                            <span class="text-muted fontSize12">And Tell Us Your Full Name!</span>
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="inputboxStyle" id="inputFullName"
+                                                onkeypress="displayStep4()">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 secondaryPart">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle"
+                                            id="symbolArrowFullName">
+                                        <img src="./arrowRightIcon.svg" alt="" class="arrowIconStyle d-none"
+                                            id="arrowFullName" onclick="nextStepDone()">
+                                    </div>
+                                </div>
+
+                                <div class="register paddingTop100 d-none" id="registerPart">
+                                    <div class="icon">
+                                        <img src="./tickMarkIcon.png" alt="" class="iconTickMarkStyle">
+                                    </div>
+                                    <div class="caption">
+                                        <span class="fontSize14">Done!
+                                            Task Completed
+                                        </span>
+                                    </div>
+                                    <div class="signupButton pt-4">
+                                        <button class="btn buttonStyle2">Let's Go!</button>
+                                    </div>
+                                </div>
+
+                                <div class="stepList text-muted fontSize12 paddingTop100 mr-5 d-none" id="stepList">
+                                    <span class="subtitleStepStyle d-none" id="subtitleStep1"
+                                        onclick="step1()">Step1</span>&nbsp;&nbsp;
+                                    <span class="subtitleStepStyle d-none" id="subtitleStep2"
+                                        onclick="step2()">Step2</span>&nbsp;&nbsp;
+                                    <span class="subtitleStepStyle d-none" id="subtitleStep3"
+                                        onclick="step3()">Step3</span>&nbsp;&nbsp;
+                                    <span class="subtitleStepStyle d-none" id="subtitleStep4"
+                                        onclick="step4()">Step4</span>
+                                </div>
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="./jsFile.js"></script>
+
+</html>

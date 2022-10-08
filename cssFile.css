@@ -1,0 +1,236 @@
+@media screen and (max-width:1300px) {}
+
+.homeBackground {
+    background-image: url(./homeBackground.png);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formBox {
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.buttonStyle {
+    background-color: #282828;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 250px;
+    opacity: 0.7;
+}
+
+.buttonStyle:hover {
+    color: white;
+    background-color: darkorange;
+    opacity: 1;
+}
+
+.subtitleStyle:hover {
+    text-decoration: none;
+    color: black !important;
+    font-size: 13px !important;
+}
+
+.fontSize12 {
+    font-size: 12px;
+}
+
+.inputProfilePictureStyle {
+    width: 70px;
+    height: 70px;
+    border-width: 1px;
+    border-color: silver;
+    outline-width: 0px;
+}
+
+.profilePictureIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.profilePictureIcon:hover {
+    cursor: default;
+}
+
+.inputboxStyle {
+    width: 250px;
+    padding: 7px;
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: #e9e7db;
+    font-size: 12px;
+    text-indent: 35px;
+    outline-width: 0px;
+}
+
+.inputUsernameStyle {
+    background-image: url(./usernameInputIcon.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 12px;
+    opacity: 0.7;
+}
+
+.inputPasswordStyle {
+    width: 210px !important;
+    background-image: url(./passwordInputIcon.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10px;
+    opacity: 0.7;
+}
+
+.inputShowHidePasswordStyle {
+    background-image: url(./showHidePasswordIcon.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 7px;
+    width: 36px !important;
+    opacity: 0.5;
+}
+
+.inputboxStyle:hover {
+    opacity: 1;
+}
+
+.inputboxStyle:focus {
+    opacity: 1;
+}
+
+.inputShowHidePasswordStyle:hover {
+    cursor: pointer;
+}
+
+.buttonColorRed {
+    background-color: darkorange;
+}
+
+.buttonColorGreen:hover {
+    background-color: limegreen;
+}
+
+
+
+
+
+
+
+
+
+
+.mainBoxWidth {
+    width: 80%;
+}
+
+.mainBoxHeight {
+    height: 85%;
+}
+
+.backColor {
+    background-color: grey;
+}
+
+.buttonStyle1 {
+    width: 150px;
+    border-width: 2px;
+    border-color: lightgreen;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.buttonStyle1:hover {
+    background-color: lightgreen;
+    border-width: 2px;
+    border-color: lightgreen;
+    color: white;
+}
+
+.iconPhoneNumber_emailStyle {
+    width: 50px;
+    height: 50px;
+}
+
+.arrowIconStyle {
+    width: 15px;
+    height: 15px;
+    margin-top: 113px;
+    opacity: 0.2;
+}
+
+.fontSize25 {
+    font-size: 25px;
+}
+
+.paddingLeft100 {
+    padding-left: 100px;
+}
+
+.activeOpacity {
+    opacity: 0.6;
+}
+
+.activeOpacity:hover {
+    opacity: 1;
+}
+
+.colorGreen {
+    color: limegreen;
+}
+
+.arrowClickStyle:hover {
+    cursor: pointer;
+}
+
+.subtitleStepStyle {
+    color: cornflowerblue;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.subtitleStepStyle:hover {
+    opacity: 1;
+}
+
+.paddingTop118 {
+    padding-top: 118px;
+}
+
+.buttonStyle2 {
+    background-color: limegreen;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 250px;
+    opacity: 0.7;
+}
+
+.buttonStyle2:hover {
+    color: white;
+    opacity: 1;
+}
+
+.iconTickMarkStyle {
+    width: 80px;
+    height: 80px;
+}
+
+.fontSize14 {
+    font-size: 14px;
+}
+
+.colorBlack {
+    color: black;
+}
+
+.colorBlack:hover {
+    color: darkorange;
+}
+
+.paddingTop100 {
+    padding-top: 100px;
+}
